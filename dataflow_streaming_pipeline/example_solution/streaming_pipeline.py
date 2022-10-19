@@ -52,9 +52,9 @@ class ModelInvoker(beam.DoFn):
             # Medium when 5000 - 10000
             # High when > 1000
             spend_class = "Low"
-            if result["Value"] > 5000:
+            if result["value"] > 5000:
                 spend_class = "Medium"
-            if result["Value"] > 10000:
+            if result["value"] > 10000:
                 spend_class = "High"
             result["Class_of_spend"] = spend_class
 
