@@ -8,11 +8,6 @@ cd dataflow_streaming_pipeline
 ## Upload dataflow template
 gsutil cp data-night-template_metadata <change_to_your_own_template_bucket_location e.g. gs://test-apache-beam-data-night/templates/>
 
-## Create BigQuery dataset to put the data in
-bq --location=EU mk \
-    --dataset \
-    <change_to_your_own_project_id>:data_night
-
 ## Build pipeline
 python streaming_pipeline.py \
   --runner=DataflowRunner \
@@ -30,4 +25,4 @@ gcloud dataflow jobs run data-night-test \
   --staging-location=<change_to_your_own_staging_bucket_location e.g. gs://test-apache-beam-data-night/staging> \
   --region=europe-west1 \
   --project=<change_to_your_own_project_id> \
-  --parameters=output_table=<change_to_your_own_project_id>:data_night.results,model_project=data-night-2022,model_location=us-central1,model_endpoint_id=8730935963145994240
+  --parameters=output_table=<change_to_your_own_project_id>:datanight.results,model_project=data-night-2022,model_location=us-central1,model_endpoint_id=8730935963145994240
