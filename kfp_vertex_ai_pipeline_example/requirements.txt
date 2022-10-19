@@ -1,0 +1,3 @@
+google-cloud-aiplatform==1.16.1
+kfp==2.0.0b4
+git+https://github.com/devoteamgcloud/pipelines#egg=google-cloud-pipeline-components&subdirectory=components/google-cloud
