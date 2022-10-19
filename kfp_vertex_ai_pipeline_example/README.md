@@ -109,14 +109,4 @@ python3 run_pipeline.py \
       --bucket [OUTPUT_BUCKET] \
       --service-account [SERVICE_ACCOUNT]
 ```
-
-python3 run_pipeline.py \
-      --project data-night-2022 \
-      --region us-central1 \
-      --training-data-uri gs://data-night-2022-pipelines-demo/data/black-friday-demo/train.csv \
-      --pipeline-name kfp-vertex-ai-automl-regression \
-      --bucket data-night-2022-pipelines-demo \
-      --service-account sa-vertex-pipeline@data-night-2022.iam.gserviceaccount.com
-
-
 Congrats your pipeline is now running and your model will be ready in the next hour!
