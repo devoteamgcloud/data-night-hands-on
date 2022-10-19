@@ -30,7 +30,6 @@ BQ_SCHEMA = ",".join(
 # This is the reason why we use 'yield' and not 'return'
 class ModelInvoker(beam.DoFn):
     def __init__(self, project, location, endpoint_name, *unused_args, **unused_kwargs):
-        super().__init__(*unused_args, **unused_kwargs)
         self.project = project
         self.location = location
         self.endpoint_name = endpoint_name
