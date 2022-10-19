@@ -15,7 +15,7 @@ ML inference. You can find the code in the dataflow_streaming_pipeline folder.
 ## Get all the code and packages in Cloud Shell Editor
 Both sessions will use the Cloud Shell Editor to adapt, build and deploy code.
 
-To start, please go to console.google.com, select the project "dt-dn-<first_part_your_email>" in the dropdown 
+To start, please go to console.cloud.google.com, select the project "dt-dn-<first_part_your_email>" in the dropdown 
 right next to the "Google Cloud" logo, which you can find in the top left corner of the screen.
 
 When the project is selected please search for 'Cloud Shell Editor' in the searchbar and go to this service.
