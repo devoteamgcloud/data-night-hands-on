@@ -1,0 +1,36 @@
+{
+  "name": "Data Night 2022 - Dataflow template",
+  "description": "Streaming from Pub/Sub to BigQuery with Vertex AI endpoint predictions.",
+  "parameters": [
+    {
+      "name": "output_table",
+      "label": "Output BigQuery table",
+      "helpText": "BigQuery output table name.",
+      "isOptional": true,
+      "regexes": [
+        "([^:]+:)?[^.]+[.].+"
+      ]
+    },
+    {
+      "name": "model_project",
+      "label": "Model project",
+      "helpText": "Project of the endpoint of the Vertex AI model.",
+      "isOptional": true
+    },
+    {
+      "name": "model_location",
+      "label": "Model location",
+      "helpText": "Location of the endpoint of the Vertex AI model.",
+      "isOptional": true
+    },
+    {
+      "name": "model_endpoint_id",
+      "label": "Model endpoint ID",
+      "helpText": "ID of the endpoint of the Vertex AI model.",
+      "isOptional": true,
+      "regexes": [
+        "^[0-9]*$"
+      ]
+    }
+  ]
+}
